@@ -1,0 +1,46 @@
+Create table Room
+(
+Room_No Number(10) constraint R_key Primary key,
+Last_clean DATE
+);
+
+
+Create table Sweeper
+(
+Sweep_Id Number(10) constraint S_Id Primary key,
+Sweep_Name Char(20)
+);
+
+Create table Student 
+(
+Roll_No Number(10) constraint Stu_Id Primary Key,
+Room_No Number(10) references Room(Room_No),
+Name Char(20) ,
+Phone_No Number(13),
+Allotment_Date Date
+);
+
+Create table Slot 
+(
+Slot_Id Number(10) constraint Slot_Id Primary Key,
+Time Date 
+);
+
+Create table Request 
+(
+Request_Id Number(10) constraint Req_Id Primary Key,
+Roll_No Number(10) references Student(Roll_No),
+Room_No Number(10) references Room(Room_No),
+Slot_Id Number(10) references Slot(Slot_Id),
+Request_Date Date
+);
+
+Create table Clean  
+(
+Request_Id Number(10) references Request(Request_Id) ,
+
+Room_No Number(10) references Room(Room_No),
+Sweep_Id Number(10) references Sweeper(Sweep_Id),
+Rating Number(1) default 0,
+Primary Key(Request_Id)
+);

@@ -1,0 +1,10 @@
+create or replace trigger sname_cap 
+before insert or update of sweep_name on sweeper  
+ 
+for each row  
+begin 
+    :new.sweep_name := UPPER(:new.sweep_name); 
+end;
+
+insert into sweeper values(5,'Sonu Sood','9812354600');
+select * from sweeper

@@ -1,0 +1,8 @@
+declare 
+s clean.sweep_id%type; 
+CURSOR C1 is select Sweep_id,avg(Rating) as rating from clean group by Sweep_id; 
+begin  
+for rec in C1 loop 
+dbms_output.put_line(rec.sweep_id||' '||rec.rating); 
+end loop; 
+end;

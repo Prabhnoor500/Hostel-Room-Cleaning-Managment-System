@@ -1,0 +1,3 @@
+select sweep_id, round(avg(rating),2) ,request_date 
+from clean,request 
+group by sweep_id,request_date;

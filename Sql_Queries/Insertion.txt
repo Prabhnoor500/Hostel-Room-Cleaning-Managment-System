@@ -1,0 +1,216 @@
+begin 
+    for i in 1..10 loop 
+    insert into room  
+    values(100+i,NULL); 
+    end loop;
+end;
+
+
+begin 
+    for i in 1..10 loop 
+    insert into room  
+    values(200+i,NULL); 
+    end loop;
+end;
+
+
+begin 
+    for i in 1..10 loop 
+    insert into room  
+    values(300+i,NULL); 
+    end loop;
+end;
+
+select * from clean
+  
+    insert into Request values (1,102003514, 104, 3 , to_char(sysdate-1,'DD-MON-YYYY' ));
+    insert into Request values (2,102003513, 103, 2, to_char(sysdate-1,'DD-MON-YYYY' ) );
+    insert into Request values (3,102003515, 105, 1,to_char(sysdate-1,'DD-MON-YYYY' ));
+    insert into Request values (4,102003516, 106, 4,to_char(sysdate-1,'DD-MON-YYYY' ));
+    insert into Request values (5,102003517, 107, 5, to_char(sysdate-2,'DD-MON-YYYY' ));
+    insert into Request values (6,102003519, 109, 6,to_char(sysdate-2,'DD-MON-YYYY' ));
+    insert into Request values (7,102003534, 204, 7,to_char(sysdate-2,'DD-MON-YYYY' ));
+    insert into Request values (8,102003531, 201, 8,to_char(sysdate-3,'DD-MON-YYYY' ));
+    insert into Request values (9,102003537, 207, 9,to_char(sysdate-3,'DD-MON-YYYY' ));
+    insert into Request values (10,102003518, 108, 10,to_char(sysdate-4,'DD-MON-YYYY' ));
+    insert into Request values (11,102003533, 203, 11,to_char(sysdate-4,'DD-MON-YYYY' ));
+    insert into Request values (12,102003536, 206, 12,to_char(sysdate-4,'DD-MON-YYYY' ));
+    insert into Request values (13,102003539, 209, 13,to_char(sysdate-5,'DD-MON-YYYY' ));
+    insert into Request values (14,102003542, 302, 14,to_char(sysdate-5,'DD-MON-YYYY' ));
+    insert into Request values (15,102003545, 305, 15,to_char(sysdate-4,'DD-MON-YYYY' ));
+    insert into Request values (16,102003540, 210, 16,to_char(sysdate-5,'DD-MON-YYYY' ));
+    insert into Request values (17,102003547, 307, 8,to_char(sysdate-4,'DD-MON-YYYY' ));
+    insert into Request values (18,102003548, 308, 4, to_char(sysdate-2,'DD-MON-YYYY' ));
+    insert into Request values (19,102003523, 203, 7,to_char(sysdate-3,'DD-MON-YYYY' ));
+    insert into Request values (20,102003524, 204, 10,to_char(sysdate-1,'DD-MON-YYYY' ));
+    insert into Request values (21,102003527, 207, 13,to_char(sysdate-3,'DD-MON-YYYY' ));
+    insert into Request values (22,102003528, 208, 16,to_char(sysdate-5,'DD-MON-YYYY' ));
+    insert into Request values (23,102003552, 302, 15,to_char(sysdate-4,'DD-MON-YYYY' ));
+    insert into Request values (24,102003554, 304, 12,to_char(sysdate-5,'DD-MON-YYYY' ));
+    insert into Request values (25,102003529, 209, 2,to_char(sysdate-5,'DD-MON-YYYY' ));
+
+declare 
+    d number := 1;
+    slot number := 1; 
+begin
+    for i in 1..10 loop
+    
+    insert into student values(102003500+i,100+i,NULL,9991565100+i,to_char(sysdate+d,'DD-MON-YYYY'));
+    d:=d+1; 
+    if d > 5 then
+        d:=1;
+    end if ;
+    end loop ;
+end;
+
+
+declare 
+    d number := 1;
+    slot number := 1; 
+begin
+    for i in 1..10 loop
+    
+    insert into student values(102003510+i,100+i,NULL,9991562100+i,to_char(sysdate+d,'DD-MON-YYYY'));
+    d:=d+1; 
+    if d > 5 then
+        d:=1;
+    end if ;
+    end loop ;
+end;
+
+select count(Roll_No) from student
+
+  declare 
+    d number := 1;
+    slot number := 1; 
+begin
+    for i in 1..10 loop
+    
+    insert into student values(102003520+i,200+i,NULL,9991545100+i,to_char(sysdate+d,'DD-MON-YYYY'));
+    d:=d+1; 
+    if d > 5 then
+        d:=1;
+    end if ;
+    end loop ;
+end;
+
+declare 
+    d number := 1;
+    slot number := 1; 
+begin
+    for i in 1..10 loop
+    
+    insert into student values(102003530+i,200+i,NULL,9221565100+i,to_char(sysdate+d,'DD-MON-YYYY'));
+    d:=d+1; 
+    if d > 5 then
+        d:=1;
+    end if ;
+    end loop ;
+end;
+
+declare 
+    d number := 1;
+    slot number := 1; 
+begin
+    for i in 1..10 loop
+    
+    insert into student values(102003540+i,300+i,NULL,9321565100+i,to_char(sysdate+d,'DD-MON-YYYY'));
+    d:=d+1; 
+    if d > 5 then
+        d:=1;
+    end if ;
+    end loop ;
+end;
+
+declare 
+    d number := 1;
+    slot number := 1; 
+begin
+    for i in 1..10 loop
+    
+    insert into student values(102003550+i,300+i,NULL,9341565100+i,to_char(sysdate+d,'DD-MON-YYYY'));
+    d:=d+1; 
+    if d > 5 then
+        d:=1;
+    end if ;
+    end loop ;
+end;
+
+
+declare
+type namesarray IS VARRAY(60) OF CHAR(20);
+names namesarray; 
+begin
+names:=namesarray('Raju','ram','Robin','John','Hardik','Manpreet','Diptesh','Chirag','Pritam','Hamza','Ali','Mirza','Parag','Atharv','Virat','Rohit','Prateek','Rajendra','Hitesh','Mitesh','Amogh','Hritik','Sachin','Salman','Tiger','Varun','Shubhman','Aditya','Anil','Kunal','Siraj','Shami','Michael','Steve','Imran','Kane','Narendra','Manindra','Prabhnoor','Babar','Rizvan','Akhand','Vaibhav','Raghav','Sameer','Kabir','Sabmeer','Piyush','Sarvagy','Armaan','Aman','Ramu','Manu','Aarush','Mitesh','Khalid','Kabeer','Jai','Veeru','Bhola');
+For i in 1..60 loop
+Update student 
+Set Name = names(i) where Roll_No = 102003500+i;
+end loop;
+end;
+
+
+    insert into Slot values(1,to_date('09:00','hh24:mi'));
+    insert into Slot values(2,to_date('09:15','hh24:mi'));
+    insert into Slot values(3,to_date('09:30','hh24:mi'));
+    insert into Slot values(4,to_date('09:45','hh24:mi'));
+    insert into Slot values(5,to_date('10:00','hh24:mi'));
+    insert into Slot values(6,to_date('10:15','hh24:mi'));
+    insert into Slot values(7,to_date('10:30','hh24:mi'));
+    insert into Slot values(8,to_date('10:45','hh24:mi'));
+    insert into Slot values(9,to_date('11:00','hh24:mi'));
+    insert into Slot values(10,to_date('11:15','hh24:mi'));
+    insert into Slot values(11,to_date('11:30','hh24:mi'));
+    insert into Slot values(12,to_date('11:45','hh24:mi'));
+    insert into Slot values(13,to_date('12:00','hh24:mi'));
+    insert into Slot values(14,to_date('12:15','hh24:mi'));
+    insert into Slot values(15,to_date('12:30','hh24:mi'));
+    insert into Slot values(16,to_date('12:45','hh24:mi'));
+
+
+
+ insert into Request values (1,102003514, 104, 3 , to_char(sysdate-1,'DD-MON-YYYY' ));
+    insert into Request values (2,102003513, 103, 2, to_char(sysdate-1,'DD-MON-YYYY' ) );
+    insert into Request values (3,102003515, 105, 1,to_char(sysdate-1,'DD-MON-YYYY' ));
+    insert into Request values (4,102003516, 106, 4,to_char(sysdate-1,'DD-MON-YYYY' ));
+    insert into Request values (5,102003517, 107, 5, to_char(sysdate-2,'DD-MON-YYYY' ));
+    insert into Request values (6,102003519, 109, 6,to_char(sysdate-2,'DD-MON-YYYY' ));
+    insert into Request values (7,102003534, 204, 7,to_char(sysdate-2,'DD-MON-YYYY' ));
+    insert into Request values (8,102003531, 201, 8,to_char(sysdate-3,'DD-MON-YYYY' ));
+    insert into Request values (9,102003537, 207, 9,to_char(sysdate-3,'DD-MON-YYYY' ));
+    insert into Request values (10,102003518, 108, 10,to_char(sysdate-4,'DD-MON-YYYY' ));
+    insert into Request values (11,102003533, 203, 11,to_char(sysdate-4,'DD-MON-YYYY' ));
+    insert into Request values (12,102003536, 206, 12,to_char(sysdate-4,'DD-MON-YYYY' ));
+    insert into Request values (13,102003539, 209, 13,to_char(sysdate-5,'DD-MON-YYYY' ));
+    insert into Request values (14,102003542, 302, 14,to_char(sysdate-5,'DD-MON-YYYY' ));
+    insert into Request values (15,102003545, 305, 15,to_char(sysdate-4,'DD-MON-YYYY' ));
+    insert into Request values (16,102003540, 210, 16,to_char(sysdate-5,'DD-MON-YYYY' ));
+    insert into Request values (17,102003547, 307, 8,to_char(sysdate-4,'DD-MON-YYYY' ));
+    insert into Request values (18,102003548, 308, 4, to_char(sysdate-2,'DD-MON-YYYY' ));
+    insert into Request values (19,102003523, 203, 7,to_char(sysdate-3,'DD-MON-YYYY' ));
+    insert into Request values (20,102003524, 204, 10,to_char(sysdate-1,'DD-MON-YYYY' ));
+    insert into Request values (21,102003527, 207, 13,to_char(sysdate-3,'DD-MON-YYYY' ));
+    insert into Request values (22,102003528, 208, 16,to_char(sysdate-5,'DD-MON-YYYY' ));
+    insert into Request values (23,102003552, 302, 15,to_char(sysdate-4,'DD-MON-YYYY' ));
+    insert into Request values (24,102003554, 304, 12,to_char(sysdate-5,'DD-MON-YYYY' ));
+    insert into Request values (25,102003529, 209, 2,to_char(sysdate-5,'DD-MON-YYYY' ));
+
+Alter table Sweeper  
+ADD Phone_No number(15);
+Insert into Sweeper values(101,'Raju',9877908712);
+Insert into Sweeper values(102,'Mukesh',9876789031);
+Insert into Sweeper values(103,'Ramesh',9619151000);
+
+
+declare
+req number(10);
+room_num number(10);
+s_id number(10);
+Rating number(1);
+begin
+for i in 1..25 loop
+s_id:= floor(dbms_random.value(101,103));
+Rating := floor(dbms_random.value(1,5));
+select Room_No into room_num from request where Request_Id = i  ;
+insert into clean values( i,room_num,s_id,Rating );
+end loop;
+end;
