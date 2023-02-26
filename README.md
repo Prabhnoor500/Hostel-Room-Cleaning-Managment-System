@@ -117,10 +117,9 @@ Primary Key(Request_Id)
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [SARVAGY JAIN](https://www.linkedin.com/in/sarvagy-jain-17a74a207/) - sarvagyjain@gmail.com
+Your Name - [PRABHNOOR SINGH GHOTRA ](https://www.linkedin.com/in/prabhnoor-singh-35b839242) - prabhnoor15mar@gmail.com
 
-Project Link: [https://github.com/Sarvagy-Jain/Hostel-Room-Cleaning-Management-](https://github.com/Sarvagy-Jain/Hostel-Room-Cleaning-Management-)
-
+Project Link: [https://github.com/Prabhnoor500/Hostel-Room-Cleaning-Managment-System](https://github.com/Prabhnoor500/Hostel-Room-Cleaning-Managment-System)
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- ACKNOWLEDGMENTS -->
