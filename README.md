@@ -122,11 +122,6 @@ Your Name - [PRABHNOOR SINGH GHOTRA ](https://www.linkedin.com/in/prabhnoor-sing
 Project Link: [https://github.com/Prabhnoor500/Hostel-Room-Cleaning-Managment-System](https://github.com/Prabhnoor500/Hostel-Room-Cleaning-Managment-System)
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [MYSQL]:https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white
